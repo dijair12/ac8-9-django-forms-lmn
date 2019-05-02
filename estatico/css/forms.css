@@ -1,0 +1,67 @@
+h1.form-titulo {
+    text-align: center;
+}
+
+form {
+    width: 600px;
+    margin: 0 auto;
+}
+
+div.form-item {
+    margin: 3px 0;
+}
+
+div.form-item input, 
+div.form-item textarea, 
+div.form-item select {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid gray;
+    line-height: 1.5;
+    height: 35px;
+    background: #FFFFFF
+}
+
+div.form-item input:focus, 
+div.form-item textarea:focus, 
+div.form-item select:focus{
+    border-color: var(--cor-principal);
+}
+
+fieldset.form-item {
+    border:0;
+    padding: 0;
+}
+
+fieldset.secao {
+    margin-bottom: 16px;
+}
+
+fieldset.secao > legend {
+    font-weight: bold;
+    border-bottom: 2px solid #89cfcf;
+    display: inline-block;
+    width: 100%;
+}
+
+div.form-item input[type="radio"], 
+div.form-item input[type="checkbox"] {
+    width:initial;
+    line-height: initial;
+    height: initial;
+    border: initial;
+    border-radius: initial;
+}
+
+div.form-item textarea {
+    height: 300px;
+}
+
+div.acoes {
+    margin: 8px 0;
+    text-align: center;
+}
+
+a.esqueci {
+    color: var(--cor-principal)
+}
