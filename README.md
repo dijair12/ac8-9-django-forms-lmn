@@ -1,10 +1,6 @@
 # Exercício Django MVC
 
-**Sumário**
-
-[TOC]
-
-#Enunciado
+# Enunciado
 Nessa atividade será criada a primeira estrutura de um projeto Django, aproveitando as melhores práticas do Django vistas em aula e do padrão MVC de projetos.
 
 ## Como começar
@@ -31,7 +27,7 @@ Após isso devem ser criados as seguintes aplicações e as páginas dentro dela
 
  - **website**: aplicação do conteúdo principal do site, além do conteúdo estático compelto (páginas index e contato) .
  - **contas**: aplicação que gerencia as contas, login e autorização (páginas login, inscrever, lembrar e esqueci).
- -  **cursos**: aplicação que gerencia os cursos e dsiciplinas da faculdade (páginas ads, bd, gti, si).
+ - **cursos**: aplicação que gerencia os cursos e dsiciplinas da faculdade (páginas ads, bd, gti, si).
  - **restrito**: aplicação que cuidará da área restrita do LMS (página notas).
 
 ### Páginas
@@ -104,7 +100,7 @@ O e-mail deve ser enviado com as seguintes regras:
  - O e-mail destinatário deve ser *contato@fit.com.br*.
  - Os tipos de resposta devem vir como o nome inteiro, T para Telefone e E para E-mail.
  - O texto do e-mail deve estar no seguinte formato:
- **
+ ```
  Você recebeu o contato do seguinte usuário:
  ->Nome: {{ NOME DIGITADO PELO USUÁRIO }}
  ->E-mail: {{ EMAIL DIGITADO PELO USUÁRIO }}
@@ -112,4 +108,4 @@ O e-mail deve ser enviado com as seguintes regras:
  ->Assunto: {{ ASSUNTO ESCOLHIDO PELO USUÁRIO }}
  ->Resposta: {{ TIPOS DE RESPOSTA ESCOLHIDOS PELO USUÁRIO (separados por ;) }}
  ->Mensagem: {{ MENSAGEM DIGITADA PELO USUÁRIO }}
- **
+ ´´´
