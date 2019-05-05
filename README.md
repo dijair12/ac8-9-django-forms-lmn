@@ -45,19 +45,19 @@ Lembre-se que uma **url nomeada** deve acompanhar o *namespace* da sua aplicaç�
  - *URL NOMEADA*: website:contato
 
 #### esqueci.html
- - *URL*: /esuqeci-a-senha/
+ - *URL*: /contas/esqueci-a-senha/
  - *URL NOMEADA*: contas:esqueci
 
 #### lembrar.html
- - *URL*: /lembrar/
+ - *URL*: /contas/lembrar/
  - *URL NOMEADA*: contas:lembrar
 
 #### inscrever.html
- - *URL*: /inscrever
+ - *URL*: /contas/inscrever/
  - *URL NOMEADA*: contas:inscrever
 
 #### login.html
- - *URL*: /entrar/
+ - *URL*: /contas/entrar/
  - *URL NOMEADA*: contas:entrar
 
 #### notas.html
@@ -95,7 +95,7 @@ Preste atenção nos *namespaces* definidos nas instruções, eles devem ser obe
 O formulário de contato deve conseguir mandar um e-mail a um endereço específico. O Django possui uma maneira própria de envio de e-mail (veja aqui: https://docs.djangoproject.com/pt-br/2.2/topics/email/). Podem usar a versão de **console** de envio de e-mail.
 
 O e-mail deve ser enviado com as seguintes regras:
- - O assunto (*subject*) deve ser **FIT Contato -  {{ ASSUNTO }}**, onde o **{{ ASSUNTO }}** é o assunto escolhido pelo usuário ao preencher o formulário de contato (Bug, Reclamação ou Sugestão).
+ - O assunto (*subject*) deve ser **FIT Contato - {{ ASSUNTO }}**, onde o **{{ ASSUNTO }}** é o assunto escolhido pelo usuário ao preencher o formulário de contato (Bug, Reclamação ou Sugestão).
  - O e-mail remetente deve ser o que o usuário digitou no formulário.
  - O e-mail destinatário deve ser *contato@fit.com.br*.
  - Os tipos de resposta devem vir como o nome inteiro, T para Telefone e E para E-mail.
