@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block links %}
+	<link rel="stylesheet" href="{% static 'css/forms.css' %}" />
+{% endblock %}
+
+{% block conteudo %}
+    <h1 class="form-titulo">Mande uma Mensagem</h1>
+    <form method="POST">
+        <div class="form-item">
+            <label for="contato-nome">Nome</label>
+            <input type="text" name="nome" id="contato-nome" required />
+        </div>
+        <div class="form-item">
+            <label for="contato-email">E-Mail</label>
+            <input type="email" name="email" id="contato-email" />
+        </div>
+        <div class="form-item">
+            <label for="contato-telefone">Telefone</label>
+            <input type="tel" name="telefone" id="contato-telefone" />
+        </div>
+        <div class="form-item">
+            <label for="contato-assunto">Assunto</label>
+            <select name="assunto" id="contato-assunto" required >
+                <option value=""> -- Selecione --</option>
+                <option value="B">Bug</option>
+                <option value="R">Reclamação</option>
+                <option value="S">Sugestão</option>
+            </select>
+        </div>
+        <div class="form-item">
+            <label for="contato-mensagem">Mensagem</label>
+            <textarea name="mensagem" id="contato-mensagem"></textarea>
+        </div>
+        <fieldset class="form-item">
+            <legend>Opções de Resposta</legend>
+            <label for="contato-resposta-email">E-Mail
+                <input id="contato-resposta-email" type="checkbox" name="resposta" value="E" />
+            </label>
+            <label for="contato-resposta-telefone">Telefone</label>
+            <input id="contato-resposta-telefone" type="checkbox" name="resposta" value="T" />
+        </fieldset>
+        <div class="acoes">
+            <button class="btn btn-principal" type="submit">Enviar</button>
+        </div>
+    </form>
+{% endblock %}

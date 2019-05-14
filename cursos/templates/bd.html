@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block links %}
+	<link rel="stylesheet" href="{% static 'css/cursos.css' %}" />
+{% endblock %}
+
+{% block conteudo %}
+    <h1 class="curso-titulo">Banco de Dados</h1>
+
+    <section class="sobre">
+        <h2>Sobre o Curso</h2>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Nam laoreet nec velit at viverra. Morbi convallis est
+            porta sodales tristique. Fusce ut volutpat mi. Nam diam
+            sem, dignissim eu varius quis, eleifend non eros. Donec
+            nec enim non arcu bibendum lacinia. Phasellus sed nisl
+            libero. Sed et est turpis. Nam at justo euismod diam
+            iaculis interdum. Suspendisse ex dui, cursus eu semper
+            sed, bibendum ac mi. Donec est augue, pharetra blandit
+            lacus sed, sodales ornare ex.
+        </p>
+        <p>
+            Curabitur tincidunt nunc ac interdum molestie. Aliquam erat volutpat. Sed scelerisque vehicula justo at
+            ultricies. In et tellus neque. Aenean nunc nisi, aliquet ut facilisis sed, imperdiet ac tellus. Nam
+            congue, metus sed volutpat rutrum, magna mauris bibendum ante, a lacinia sem erat eget leo. Sed
+            tincidunt nulla efficitur orci dignissim feugiat. Sed imperdiet purus non tortor facilisis, et euismod
+            ipsum commodo.
+        </p>
+        <p>
+            Donec tempus mollis quam ut congue. Vivamus at ipsum tristique, malesuada purus eu, pellentesque eros.
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam mollis
+            lobortis dolor, quis mattis libero elementum sed. Quisque posuere id nisi quis hendrerit. Nullam
+            accumsan pretium mi at ullamcorper. Donec orci odio, blandit ac lacus sit amet, congue vulputate justo.
+            Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus nec libero eget urna luctus
+            rutrum ac vel risus.
+        </p>
+    </section>
+    <section class="informacoes">
+        <h2>Informações</h2>
+
+        <p>
+            <strong>GRADUAÇÃO</strong>
+        </p>
+
+        <strong class="principal">Período:</strong>
+        <ul>
+            <li><strong class="principal">Matutino</strong> | 08h00 às 11h40 |</li>
+            <li><strong class="principal">Noturno</strong> | 19h00 às 23h40 |</li>
+        </ul>
+
+        <strong class="principal">Duração:</strong> 4 semestres
+    </section>
+    <section class="curriculo">
+        <h2 class="curriculo-titulo">Matriz Curricular</h2>
+        <table class="matriz">
+            <tr>
+                <th>1º Semestre</th>
+                <th>2º Semestre</th>
+                <th>3º Semestre</th>
+                <th>4º Semestre</th>
+            </tr>
+            <tr>
+                <td>Disciplina 1: 80h</td>
+                <td>Disciplina 6: 80h</td>
+                <td>Disciplina 11: 80h</td>
+                <td>Disciplina 16: 80h</td>
+            </tr>
+            <tr>
+                <td>Disciplina 2: 80h</td>
+                <td>Disciplina 7: 80h</td>
+                <td>Disciplina 12: 80h</td>
+                <td>Disciplina 17: 80h</td>
+            </tr>
+            <tr>
+                <td>Disciplina 3: 80h</td>
+                <td>Disciplina 8: 80h</td>
+                <td>Disciplina 13: 80h</td>
+                <td>Disciplina 18: 80h</td>
+            </tr>
+            <tr>
+                <td>Disciplina 4: 80h</td>
+                <td>Disciplina 9: 80h</td>
+                <td>Disciplina 14: 80h</td>
+                <td>Disciplina 19: 80h</td>
+            </tr>
+            <tr>
+                <td>Disciplina 5: 80h</td>
+                <td>Disciplina 10: 80h</td>
+                <td>Disciplina 15: 80h</td>
+                <td>Disciplina 20: 80h</td>
+            </tr>
+        </table>
+    </section>
+{% endblock %}

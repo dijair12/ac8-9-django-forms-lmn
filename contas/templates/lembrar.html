@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block links %}
+	<link rel="stylesheet" href="{% static 'css/forms.css' %}" />
+{% endblock %}
+
+{% block conteudo %}
+	<h1 class="form-titulo">Gerar nova senha</h1>
+	<form method="POST" action="index.html">
+		<div class="form-item">
+			<label for="lembrar-senha">Senha</label>
+			<input type="password" name="senha" id="lembrar-senha" required />
+		</div>
+		<div class="form-item">
+			<label for="lembrar-confirmacao-senha">Confirme sua senha</label>
+			<input type="password" name="confirmacao-senha" id="lembrar-confirmacao-senha" required />
+		</div>
+		<div class="acoes">
+			<button class="btn btn-principal" type="submit">Salva nova Senha</button>
+		</div>
+	</form>
+{% endblock %}
