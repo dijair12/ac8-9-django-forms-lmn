@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block links %}
+	<link rel="stylesheet" href="{% static 'css/forms.css' %}" />
+{% endblock %}
+
+{% block conteudo %}
+	<h1 class="form-titulo">Entrar</h1>
+	<form method="POST">
+		<div class="form-item">
+			<label for="entrar-usuario">Usuário</label>
+			<input type="text" name="usuario" id="entrar-usuario" required />
+		</div>
+		<div class="form-item">
+			<label for="entrar-senha">Senha</label>
+			<input type="password" name="senha" id="entrar-senha" required />
+		</div>
+		<div class="acoes">
+			<button class="btn btn-principal" type="submit">Entrar</button>
+			<a href="{% url 'contas:esqueci' %}" class="esqueci">Esqueci a senha</a>
+		</div>
+	</form>
+{% endblock %}
