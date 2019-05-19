@@ -1,0 +1,118 @@
+<!DOCTYPE html> <!-- Diretiva indicando para usar o HTML mais novo disponível pelo navegador-->
+<html> <!-- Indica o início do documento HTML -->
+
+<head> <!-- A tag head contém todas as tags de configuração da página-->
+	<meta charset="UTF-8" /> <!-- configura a codificação de caracteres do navegador para o UTF-8-->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <!-- Adiciona o ícone de aba de navegador-->
+	<title> 
+		LMS IMPACTA
+	</title><!-- Adiciona o título na aba do navegador-->
+	<link rel="stylesheet" href="css/site.css" />
+	<link rel="stylesheet" href="css/forms.css" />
+</head>
+
+<body> <!-- A tag body contém o conteúdo que será mostrado ao usuário-->
+	<header  id="cabecalho"> <!-- Indica o cabeçalho do nosso documento-->
+		<a href="index.html">
+            <img src="imagens/impacta-logo.png" alt="logo da faculdade impacta" /> <!-- anexa imagem e texto alternativo-->
+        </a>
+		<nav> <!-- Indica que o conteúdo é composto de links de navegação-->
+			<div class="dropdown">
+				<a href="#">Cursos</a> <!-- Link que não leva a lugar nenhum-->
+			<ul class="navegacao"> <!-- Estrutura de lista não ordenada -->
+				<li> <!-- Item de lista -->
+					<a href="cursos/ads.html">Análise e Desenvolvimento de Sistemas</a>
+					<!-- Link para outra página interna-->
+				</li>
+				<li>
+					<a href="cursos/bd.html">Banco de Dados</a>
+				</li>
+				<li>
+					<a href="cursos/gti.html">Gestão em Tecnologia da Informação</a>
+				</li>
+				<li>
+					<a href="cursos/si.html">Sistemas da Informação</a>
+				</li>
+			</ul>
+			</div>
+			<a href="contato.html">Contato</a>
+			<a href="inscrever.html" class="link-inscricao">Inscreva-se</a>
+			<a href="login.html" class="link-entrar">Entrar</a>
+		</nav>
+	</header>
+	<main> <!-- indica que é o conteúdo principal dessa página -->
+		<h1 class="form-titulo">Mande uma Mensagem</h1>
+        <form method="POST">
+			<div class="form-item">
+				<label for="contato-nome">Nome</label>
+				<input type="text" name="nome" id="contato-nome" required />
+			</div>
+			<div class="form-item">
+				<label for="contato-email">E-Mail</label>
+				<input type="email" name="email" id="contato-email" />
+			</div>
+			<div class="form-item">
+				<label for="contato-telefone">Telefone</label>
+				<input type="tel" name="telefone" id="contato-telefone" />
+			</div>
+			<div class="form-item">
+				<label for="contato-assunto">Assunto</label>
+				<select name="assunto" id="contato-assunto" required >
+					<option value=""> -- Selecione --</option>
+					<option value="B">Bug</option>
+					<option value="R">Reclamação</option>
+					<option value="S">Sugestão</option>
+				</select>
+			</div>
+			<div class="form-item">
+				<label for="contato-mensagem">Mensagem</label>
+				<textarea name="mensagem" id="contato-mensagem"></textarea>
+			</div>
+			<fieldset class="form-item">
+				<legend>Opções de Resposta</legend>
+				<label for="contato-resposta-email">E-Mail
+					<input id="contato-resposta-email" type="checkbox" name="resposta" value="E" />
+				</label>
+				<label for="contato-resposta-telefone">Telefone</label>
+				<input id="contato-resposta-telefone" type="checkbox" name="resposta" value="T" />
+			</fieldset>
+			<div class="acoes">
+				<button class="btn btn-principal" type="submit">Enviar</button>
+			</div>
+        </form>
+	</main>
+	<footer>
+		<a href="#cabecalho" class="topo">Topo</a>
+		<ul class="navegacao">
+			<li>
+				<a href="https://www.facebook.com/FacImpacta/" class="media facebook" target="blank">
+					Facebook
+				</a>
+			</li>
+			<li>
+				<a href="https://www.instagram.com/faculdadeimpacta/" class="media instagram" target="blank">
+					Instagram
+				</a>
+			</li>
+			<li>
+				<a href="https://www.linkedin.com/edu/faculdade-impacta-tecnologia-161006" class="media linkedin" target="blank">
+					Linkedin
+				</a>
+			</li>
+			<li>
+				<a href="https://twitter.com/facimpacta" class="media twitter" target="blank">
+					Twitter
+				</a>
+			</li>
+			<li>
+				<a href="https://www.youtube.com/user/GrupoImpacta" class="media youtube" target="blank">
+					Youtube
+				</a>
+			</li>
+		</ul>
+		<p>
+			2019 Faculdade Impacta 11 3254-8300 Todos os direitos reservados.
+		</p>
+	</footer>
+</body>
+</html>

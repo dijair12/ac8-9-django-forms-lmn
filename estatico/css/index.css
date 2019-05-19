@@ -1,0 +1,51 @@
+aside.jumbotron {
+    background: #e9ecef;
+}
+
+aside.jumbotron button {
+    display: block;
+    margin: 0 auto;
+}
+
+aside.jumbotron h1 {
+    margin: 0;
+    font-weight: 400;
+}
+
+aside.jumbotron h2 {
+    font-weight: normal;
+}
+
+section.premios {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+section.premios h1 {
+    width: 100%;
+}
+
+section.premios article {
+    width: 500px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    margin: 5px;
+    background-color: var(--fundo-preto)
+}
+
+section.premios article h3 {
+    color: var(--cor-principal)
+}
+
+section.empreenda, section.smartclass {
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+section.smartclass img {
+    float: right;
+    margin: 5px 10px;
+}
+
