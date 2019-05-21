@@ -88,8 +88,8 @@ Por último, deve ser criado o cadastro do modelo Curso no sistema. para isso, v
 Para isso preenchar as views no arquivos **views.py** da aplicação cursos com a lógica necessária. Crie os mapemantos de URL's para essas páginas conforme descrito a seguir:
 
  - **/cursos/form/novo/** (_cursos:inserir_): Chama o formulário de inserção de cursos.
- - **/cursos/form/<sigla>/** (_cursos:alterar_): Chama o formulário de alteração do curso especificado pela sigla da URL.
- - **/cursos/<sigla>/** (_cursos:detalhes_): Chama a página de visualização do curso especificado pela sigla da URL.
+ - **/cursos/form/SIGLA/** (_cursos:alterar_): Chama o formulário de alteração do curso especificado pela sigla da URL.
+ - **/cursos/SIGLA/** (_cursos:detalhes_): Chama a página de visualização do curso especificado pela sigla da URL.
 
 Para as páginas funcionarem, construa dois novos templates: _curso.html_ (para a página de detalhes de curso) e _curso-form.html_ (para a página de inserção/alteração do curso).
 
