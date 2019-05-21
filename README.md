@@ -44,8 +44,7 @@ O método **autenticar** na aplicação deve verificar na base de dados dentro d
 #### Esqueci
 O formulário deve estar associado à página de esqueci a senha na aplicação **contas**. Além disso deve validar:
  
- - O campo _git@github.com:Prof-YuriDirickson/minilms-mvc.git
-email_ é obrigatório.
+ - O campo _email_ é obrigatório.
 
 O método **enviar_senha** deve verificar se o e-mail está cadastrado na base **dados.py**, se não estiver deve devolver um erro de formulário "E-mail não cadastrado!". Se existir, deve mandar um e-mail com os seguintes dados:
  - Assunto: FIT Contato - Lembre de Senha
