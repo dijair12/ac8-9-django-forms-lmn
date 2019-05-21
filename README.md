@@ -87,7 +87,7 @@ Por último, deve ser criado o cadastro do modelo Curso no sistema. Para isso de
 #### Model
 
 O modelo do curso deve ter os seguintes campos:
- - Nome (até 150 caracteres, não nulo, único).
+ - Nome (até 100 caracteres, não nulo, único).
  - Sigla (até 5 caracteres, não nulo, único).
  - Ementa (texto sem limite, nulo).
  - Semestres (inteiro, não nulo).
