@@ -23,19 +23,13 @@
 			<div class="dropdown">
 				<a href="#">Cursos</a> <!-- Link que não leva a lugar nenhum-->
 				<ul class="navegacao"> <!-- Estrutura de lista não ordenada -->
-					<li> <!-- Item de lista -->
-						<a href="{% url 'cursos:ads' %}">Análise e Desenvolvimento de Sistemas</a>
-						<!-- Link para outra página interna-->
-					</li>
-					<li>
-						<a href="{% url 'cursos:bd' %}">Banco de Dados</a>
-					</li>
-					<li>
-						<a href="{% url 'cursos:gti' %}">Gestão em Tecnologia da Informação</a>
-					</li>
-					<li>
-						<a href="{% url 'cursos:si' %}">Sistemas da Informação</a>
-					</li>
+					{% for curso in cursos_menu %}
+						<li>
+							<a href="{% url 'cursos:detalhes' sigla=curso.sigla %}"> {{ curso.nome }}</a>
+						</li>
+					{% empty %}
+						<li>Nenhum curso cadastrado!</li>
+					{% endfor %}
 				</ul>
 			</div>
 			<a href="{% url 'website:contato' %}">Contato</a>

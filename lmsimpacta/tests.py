@@ -1,13 +1,13 @@
 from django.conf import settings
 from django.contrib.staticfiles import finders
 from django.contrib.staticfiles.storage import staticfiles_storage
-from django.test import SimpleTestCase
+from django.test import TestCase
 from django.urls import reverse
 
 
 class BaseTestCases:
 
-    class SimpleViewTestCase(SimpleTestCase):
+    class SimpleViewTestCase(TestCase):
 
         def __init__(self, methodName, url=None, url_name=None, template_name=None):
             super().__init__(methodName)
@@ -50,7 +50,7 @@ class BaseTestCases:
             self.assertTemplateUsed(response, 'base.html')
             self.assertTemplateUsed(response, self.template_name)
 
-class LmsImpactaTestCase(SimpleTestCase):
+class LmsImpactaTestCase(TestCase):
 
     def setUp(self):
         pass

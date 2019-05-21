@@ -83,7 +83,19 @@ Se passar em tudo, deve registrar o novo usuário na base.
 
 ### CRUD Completo
 
-Por último, deve ser criado o cadastro do modelo Curso no sistema. Para isso deve ser criado o _model_, o _form_, a _view_ e o _template_.
+Por último, deve ser criado o cadastro do modelo Curso no sistema. para isso, vamos criar uma 2 páginas: uma para criar/alterar o curso e outra para ver os detalhes.
+
+Para isso preenchar as views no arquivos **views.py** da aplicação cursos com a lógica necessária. Crie os mapemantos de URL's para essas páginas conforme descrito a seguir:
+
+ - **/cursos/form/novo/** (_cursos:inserir_): Chama o formulário de inserção de cursos.
+ - **/cursos/form/<sigla>/** (_cursos:alterar_): Chama o formulário de alteração do curso especificado pela sigla da URL.
+ - **/cursos/<sigla>/** (_cursos:detalhes_): Chama a página de visualização do curso especificado pela sigla da URL.
+
+Para as páginas funcionarem, construa dois novos templates: _curso.html_ (para a página de detalhes de curso) e _curso-form.html_ (para a página de inserção/alteração do curso).
+
+Toda vez que passar no contexto um curso (pegando pela sigla), utilize o nome de atributo **curso**.
+
+O menu da aplicação já foi alterado para levar em conta os cursos inseridos no banco de dados (veja o arquivo **context_processors.py**).
 
 #### Model
 
@@ -96,14 +108,4 @@ O modelo do curso deve ter os seguintes campos:
 
 #### Form
 
-Deve basicamente validar as regras do modelo e permitir salvar um novo Curso.
-
-#### View
-
-Deve renderizar o template de form, conectando o Django Form, caso receba um GET. No POST, deve validar o formulário, salvar o modelo, e voltar a HOME.
-
-Deve responder no caminho (Path): /cursos/novo/
-
-#### Template
-
-Deve renderizar o formulário de acordo com os campos do modelo.
+Esse formulário deve estar na _view_ de alteração/inserção e deve basicamente validar as regras do modelo e permitir salvar um novo Curso.
