@@ -4,6 +4,11 @@ from .data import USUARIOS
 
 class EntrarForm(forms.Form):
 
+    usuario = forms.CharField(
+        min_length=5,
+        max_length=10
+    )
+    senha = forms.CharField()
     def autenticar(self):
         pass
 

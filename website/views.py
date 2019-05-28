@@ -5,6 +5,7 @@ def home(request):
     return render(request, 'index.html')
 
 def contato(request):
+
     if request.POST:
         nome = request.POST.get('nome')
         email = request.POST.get('email')

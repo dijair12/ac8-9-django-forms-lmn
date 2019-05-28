@@ -8,17 +8,21 @@
 {% block conteudo %}
 	<h1 class="form-titulo">Mande uma Mensagem</h1>
 	<form method="POST">
+		{% csrf_token %}
 		<div class="form-item">
 			<label for="contato-nome">Nome</label>
 			<input type="text" name="nome" id="contato-nome" required />
+			{{form.nome.errors}}
 		</div>
 		<div class="form-item">
 			<label for="contato-email">E-Mail</label>
 			<input type="email" name="email" id="contato-email" />
+			{{form.email.errors}}
 		</div>
 		<div class="form-item">
 			<label for="contato-telefone">Telefone</label>
 			<input type="tel" name="telefone" id="contato-telefone" />
+			{{form.telefone.errors}}
 		</div>
 		<div class="form-item">
 			<label for="contato-assunto">Assunto</label>
@@ -28,10 +32,12 @@
 				<option value="R">Reclamação</option>
 				<option value="S">Sugestão</option>
 			</select>
+			{{form.assunto.errors}}
 		</div>
 		<div class="form-item">
 			<label for="contato-mensagem">Mensagem</label>
 			<textarea name="mensagem" id="contato-mensagem"></textarea>
+			{{form.mensagem.errors}}
 		</div>
 		<fieldset class="form-item">
 			<legend>Opções de Resposta</legend>
@@ -40,6 +46,7 @@
 			</label>
 			<label for="contato-resposta-telefone">Telefone</label>
 			<input id="contato-resposta-telefone" type="checkbox" name="resposta" value="T" />
+			{{form.resposta.errors}}
 		</fieldset>
 		<div class="acoes">
 			<button class="btn btn-principal" type="submit">Enviar</button>

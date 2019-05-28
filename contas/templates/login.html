@@ -11,10 +11,12 @@
 		<div class="form-item">
 			<label for="entrar-usuario">Usuário</label>
 			<input type="text" name="usuario" id="entrar-usuario" required />
+			{{form.usuario.errors}}
 		</div>
 		<div class="form-item">
 			<label for="entrar-senha">Senha</label>
 			<input type="password" name="senha" id="entrar-senha" required />
+			{{form.senha.errors}}
 		</div>
 		<div class="acoes">
 			<button class="btn btn-principal" type="submit">Entrar</button>
